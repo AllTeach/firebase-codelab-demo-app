@@ -1,0 +1,15 @@
+// Top-level build file (keeps it minimal for modern Gradle)
+buildscript {
+    // kept minimal since plugin versions are resolved in module build files or via settings pluginManagement
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
